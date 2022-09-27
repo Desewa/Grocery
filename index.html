@@ -13,224 +13,48 @@
 </head>
 
 <body>
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand">DRESS COOL</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+    <div class="container">
+        <h1>Grocery list</h1>
+        <div id="list">
+            <form id="formOne">
+                <div class="form-group">
+                    <label for="Product"> Product</label>
+                    <input id="product" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="Quality"> Quality</label>
+                    <input id="quality" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="Amount"> Amount</label>
+                    <input id="amount" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="Seller"> Seller</label>
+                    <input id="seller" class="form-control" type="text">
+                </div>
+                <button type="submit" class="btn"> submit</button>
             </form>
         </div>
-    </nav>
+        <div id="totallist">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th>Seller</th>
+                        <th>TotalAmount</th>
+                    </tr>
+                </thead>
+                <tbody id="display">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                </div>
-                
-            </div>
-            <a class="navbar-brand" href="#"> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </div>
-
-        </div>
-    </nav>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/images (2).jpg"  alt="">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/images (2).jpg" alt="">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/images (2).jpg" alt="">
-          </div>
-        </div>
-      </div>
-    <div class="container" id="sales">
-        <div class="card" style="width: 18rem;">
-            <img src="./img/images (2).jpg" class="card-img-top" alt="">
-            <!-- <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p> 
-            </div> -->
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-               
-            </ul>
-           
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                
-            </ul>
-            
-        </div> <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                
-            </ul>
-            
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-            </ul>
-            
+                </tbody>
+            </table>
         </div>
     </div>
-        <div class="container">
-            <h1>Grocery list</h1>
-            <div id="list">
-                <form id="formOne">
-                    <div class="form-group">
-                        <label for="Product"> Product</label>
-                        <input id="product" class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="Quality"> Quality</label>
-                        <input id="quality" class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="Amount"> Amount</label>
-                        <input id="amount" class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="Seller"> Seller</label>
-                        <input id="seller" class="form-control" type="text">
-                    </div>
-                    <button type="submit" class="btn"> submit</button>
-                </form>
-            </div>
-            <div id="totallist">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Amount</th>
-                            <th>Seller</th>
-                            <th>TotalAmount</th>
-                        </tr>
-                    </thead>
-                    <tbody id="display">
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <script src="js/jquery-3.6.1.js"></script>
-        <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
