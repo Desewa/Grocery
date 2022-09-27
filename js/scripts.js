@@ -2,6 +2,7 @@ function totalprice(price,amount){
   return(price*amount)
 }
 
+
 $(document).ready(function(){
     $("#formOne").submit(function(event){
       event.preventDefault()
@@ -29,3 +30,7 @@ $(document).ready(function(){
 
 })
 })
+
+
+
+// Anonymous callback function
